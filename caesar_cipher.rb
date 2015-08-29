@@ -9,7 +9,7 @@ def caesar_cipher(offset, string)
     step.each do |number|
         if number + offset > 122 #ascii for z
             number = ((number + offset) - 27).
-        next elsif number == 32
+        next elsif number == 32 #ascii for space
         else
             number = number + offset
         end
